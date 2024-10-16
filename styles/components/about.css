@@ -1,0 +1,206 @@
+.about__item1 {
+    margin-bottom: 2rem;
+}
+
+.about__item1>*+* {
+    margin-top: 1.5rem;
+}
+
+.about__item1-title {
+    font-size: var(--size-2xl);
+    line-height: 1;
+}
+
+.about__item1-description1 {
+    font-family: var(--font-secondary);
+    font-size: var(--size-sm);
+    color: var(--clr-muted);
+}
+
+.about__item1-youtube-link {
+    color: var(--clr-light);
+}
+
+.about__item1-description2 {
+    font-size: var(--size-sm);
+    color: var(--clr-text);
+    color: var(--clr-slate400);
+}
+
+.about__item1-btn {
+    font-size: var(--size-sm);
+}
+
+.about__btn-discord-logo {
+    vertical-align: middle;
+    margin-left: .25rem;
+}
+
+.about__item2>*+* {
+    margin-top: 2rem;
+}
+
+.about__item2-label {
+    color: var(--clr-slate400);
+    font-size: var(--size-xs);
+    font-family: var(--font-secondary);
+}
+
+.about__item2-stat {
+    font-size: var(--size-3xl);
+    line-height: 1;
+    color: var(--clr-light);
+}
+
+.about__stat-type {
+    color: var(--clr-muted);
+}
+
+/* xs */
+@media (min-width: 475px) {
+
+
+    .about__item1-title {
+        font-size: var(--size-3xl);
+    }
+
+    .about__item2-label {
+        font-size: var(--size-sm);
+    }
+
+    .about__item2-stat {
+        font-size: var(--size-4xl);
+    }
+
+    .about__item1-description1 {
+        font-size: var(--size-base);
+        line-height: 1.75rem;
+    }
+
+    .about__item1-description2 {
+        font-size: var(--size-base);
+        line-height: 1.75rem;
+    }
+}
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+@media (min-width: 1024px) {
+    .about__container {
+        text-align: center;
+    }
+
+    .about__item1-description1 {
+        max-width: 65ch;
+        margin-inline: auto;
+    }
+
+    .about__item1-description2 {
+        max-width: 65ch;
+        margin-inline: auto;
+    }
+
+}
+
+/* xl */
+@media (min-width: 1280px) {
+
+
+    .about__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .about__item1-title {
+        font-size: var(--size-4xl);
+    }
+
+    .about__item1 {
+        display: block;
+        text-align: start;
+        margin-bottom: 0;
+    }
+
+    .about__item2 {
+        text-align: end;
+    }
+
+    .about__item1>*+* {
+        margin-top: 2rem;
+    }
+
+    .about__item2>*+* {
+        margin-top: 3rem;
+    }
+
+    .about__item1-description1 {
+        font-size: var(--size-base);
+        max-width: 63ch;
+        margin-left: 0;
+    }
+
+    .about__item1-description2 {
+        font-size: var(--size-base);
+        max-width: 63ch;
+        margin-left: 0;
+    }
+
+    .about__item1-btn {
+        font-size: var(--size-base);
+
+    }
+
+    .about__item2-stat {
+        font-size: var(--size-4xl);
+    }
+
+    .about__btn-discord-logo {
+        margin-left: .50rem;
+    }
+
+
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+    .about__container {
+        display: block;
+        text-align: center;
+    }
+
+    .about__item1-description1 {
+        margin-inline: auto;
+        max-width: 70ch;
+        font-size: var(--size-lg);
+    }
+
+    .about__item1-description2 {
+        margin-inline: auto;
+        max-width: 70ch;
+        font-size: var(--size-lg);
+    }
+
+    .about__item1-btn {
+        font-size: var(--size-lg);
+    }
+
+
+    .about__item2-stat {
+        font-size: var(--size-5xl);
+    }
+
+    .about__item1 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .about__item2 {
+        text-align: center;
+    }
+}

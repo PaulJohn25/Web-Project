@@ -1,0 +1,151 @@
+.hero {
+    text-align: center;
+}
+
+/* Mimics the gap property of flex layout tool */
+.hero>*+* {
+    /* Selects the allof the direct children of hero section except for the first one*/
+    margin-top: 1rem;
+}
+
+
+.hero__img {
+    width: var(--size-9xl);
+    height: var(--size-9xl);
+    object-fit: contain;
+    margin-inline: auto;
+}
+
+.hero__title {
+    /* color: var(--cls-slate50); */
+    font-size: var(--size-3xl);
+    font-weight: 900;
+    line-height: 1;
+}
+
+.hero__description1 {
+    font-size: var(--size-sm);
+    font-family: var(--font-secondary);
+    color: var(--clr-muted);
+}
+
+.hero__description2 {
+    font-size: var(--size-sm);
+    color: var(--clr-muted);
+    max-width: 57ch;
+}
+
+
+strong {
+    color: var(--clr-light);
+    font-weight: 900;
+}
+
+.hero__btn {
+    font-size: var(--size-sm);
+}
+
+.hero__br1 {
+    display: none;
+}
+
+.hero__br2 {
+    display: none;
+}
+
+/* xs */
+@media (min-width: 475px) {
+    .hero__img {
+        width: var(--size-10xl);
+        height: var(--size-10xl);
+    }
+
+    .hero__title {
+        font-size: var(--size-4xl);
+    }
+
+    .hero__description1,
+    .hero__description2 {
+        font-size: var(--size-base);
+    }
+
+    .hero__btn {
+        font-size: var(--size-base);
+    }
+}
+
+/* sm */
+@media (min-width: 640px) {
+
+    .hero__br1 {
+        display: block;
+    }
+
+    .hero__description1 {
+        max-width: 65ch;
+        letter-spacing: -0.05em;
+        margin-inline: auto;
+    }
+
+    .hero__description2 {
+        margin-inline: auto;
+    }
+}
+
+
+/* md */
+@media (min-width: 768px) {
+
+    .hero {
+        margin-top: 4rem;
+    }
+
+    .hero__br2 {
+        display: block;
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+
+    .hero {
+        margin-top: 5rem;
+    }
+
+    .hero__img {
+        width: 11.25rem;
+        height: 11.25rem;
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .hero__img {
+        width: 12.25rem;
+        height: 12.25rem;
+    }
+
+    .hero__title {
+        font-size: var(--size-5xl);
+    }
+
+    .hero__description1,
+    .hero__description2 {
+        font-size: var(--size-lg);
+        line-height: 1.8em;
+    }
+
+    .hero__btn {
+        font-size: var(--size-base);
+    }
+
+    .hero>*+* {
+        /* Selects the allof the direct children of hero section except for the first one*/
+        margin-top: 1.5rem;
+    }
+
+
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
